@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SoftUni Blog</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/jquery-1.10.2.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+</head>
+<body>
+<header>
+    <div class="navbar navbar-default navbar-fixed-top text-uppercase">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="index.html" class="navbar-brand">SoftUni Blog</a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Welcome(User)</a> </li>
+                    <li><a href="createnewpost.html">New Post</a> </li>
+                    <li><a href="index.html">Logout</a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container body-content">
+        <div class="row">
+            <div class="col-md-6">
+                <article>
+                    <header>
+                        <h2>
+                            10 Java Articles Everyone Must Read
+                        </h2>
+                    </header>
+                    <p>
+                        One month ago, we’ve published a list of 10 SQL Articles Everyone Must Read. A list of articles that we believe would add exceptional value to our readers on the jOOQ blog. The jOOQ blog is a blog focusing on both Java and SQL, so it is only natural that today, one month later, we’re publishing an equally exciting list of 10 Java articles everyone must read.
+
+                        Note that by “must read”, we may not specifically mean the particular linked article only, but also other works from the same authors, who have been regular bloggers over the past years and never failed to produce new interesting content!
+
+                        Here goes…
+                        1. Brian Goetz: “Stewardship: the Sobering Parts”
+
+                        The first blog post is actually not a blog post but a recording of a very interesting talk by Brian Goetz on Oracle’s stewardship of Java. On the jOOQ blog, we’ve been slightly critical about 1-2 features of the Java language in the past, e.g. when comparing it to Scala, or Ceylon.
+
+                        Brian makes good points about why it would not be a good idea for Java to become just as “modern” as quickly as other languages. A must-watch for every Java developer (around 1h)
+                        2. Aleksey Shipilёv: The Black Magic of (Java) Method Dispatch
+
+                        In recent years, the JVM has seen quite a few improvements, including invokedynamic that arrived in Java 7 as a prerequisite for Java 8 lambdas, as well as a great tool for other, more dynamic languages built on top of the JVM, such as Nashorn.
+
+                        invokedynamic is only a small, “high level” puzzle piece in the advanced trickery performed by the JVM. What really happens under the hood when you call methods? How are they resolved, optimised by the JIT? Aleksey’s article sub-title reveals what the article is really about:
+
+                        “Everything you wanted to know about Black Deviously Surreptitious Magic in low-level performance engineering”
+
+                        Definitely not a simple read, but a great post to learn about the power of the JVM.
+
+                        Read Aleksey’s “The Black Magic of (Java) Method Dispatch“
+                        3. Oliver White: Java Tools and Technologies Landscape for 2014
+
+                        We’re already in 2015, but this report by Oliver White (at the time head of ZeroTurnaround’s RebelLabs) had been exceptionally well executed and touches pretty much everything related to the Java ecosystem.
+
+                        Read Oliver’s “Java Tools and Technologies Landscape for 2014“
+                        4. Peter Lawrey: Java Lambdas and Low Latency
+
+                        When Aleksey has introduced us to some performance semantics in the JVM, Peter takes this one step further, talking about low latency in Java 8. We could have picked many other useful little blog posts from Peter’s blog, which is all about low-latency, high performance computing on the JVM, sometimes even doing advanced off-heap trickery.
+
+                        Read Peter’s “Java Lambdas and Low Latency“
+                        5. Nicolai Parlog: Everything You Need To Know About Default Methods
+
+                        Nicolai is a newcomer in the Java blogosphere, and a very promising one, too. His well-researched articles go in-depth about some interesting facts related to Java 8, digging out old e-mails from the expert group’s mailing list, explaining the decisions they made to conclude with what we call Java 8 today.
+
+                        Read Nicolai’s “Everything You Need To Know About Default Methods“
+                        6. Lukas Eder: 10 Things You Didn’t Know About Java
+
+                        This list wouldn’t be complete without listing another list that we wrote ourselves on the jOOQ blog. Java is an old beast with 20 years of history this year in 2015. This old beast has a lot of secrets and caveats that many people have forgotten or never thought about. We’ve uncovered them for you:
+
+                        Read Lukas’s “10 Things You Didn’t Know About Java“
+                        7. Edwin Dalorzo: Why There Is Interface Pollution in Java 8
+
+                        Edwin has been responding to our own blog posts a couple of times in the past with very well researched and thoroughly thought through articles, in particular about Java 8 related features, e.g. comparing Java 8 Streams with LINQ (something that we’ve done ourselves, as well).
+
+                        This particular article explains why there are so many different and differently named functional interfaces in Java 8.
+
+                        Read Edwin’s “Why There Is Interface Pollution in Java 8“
+                        8. Vlad Mihalcea: How Does PESSIMISTIC_FORCE_INCREMENT Lock Mode Work
+
+                        When Java talks to databases, many people default to using Hibernate for convenience (see also 3. Oliver White: Java Tools and Technologies Landscape for 2014). Hibernate’s main vision, however, is not to add convenience – you can get that in many other ways as well. Hibernate’s main vision is to provide powerful means of navigating and persisting an object graph representation of your RDBMS’s data model, including various ways of locking.
+
+                        Vlad is an extremely proficient Hibernate user, who has a whole blog series on how Hibernate works going. We’ve picked a recent, well-researched article about locking, but we strongly suggest you read the other articles as well:
+
+                        Read Vlad’s “How Does PESSIMISTIC_FORCE_INCREMENT Lock Mode Work“
+                        9. Petri Kainulainen: Writing Clean Tests
+
+                        This isn’t a purely Java-related blog post, although it is written from the perspective of a Java developer. Modern development involves testing – automatic testing – and lots of it. Petri has written an interesting blog series about writing clean tests in Java – you shouldn’t miss his articles!
+
+                        Read Petri’s “Writing Clean Tests“
+                        10. Eugen Paraschiv: Java 8 Resources Collection
+
+                        If you don’t already have at least 9 open tabs with interesting stuff to read after this list, get ready for a browser tab explosion! Eugen Paraschiv who maintains baeldung.com has been collecting all sorts of very interesting resources related to Java 8 in a single link collection. You should definitely bookmark this collection and check back frequently for interesting changes:
+
+                        Read Eugen’s “Java 8 Resources Collection“
+                    </p>
+                    <small class="author">John Doe
+                    </small>
+                    <footer>
+                        <div class="pull-right">
+                            <a class="btn btn-default btn-xs" href="#">
+                                Read more &raquo;
+                            </a>
+                        </div>
+                    </footer>
+                </article>
+            </div>
+            <div class="col-md-6">
+                <article>
+                    <header>
+                        <h2>
+                            10 Java Articles Everyone Must Read
+                        </h2>
+                    </header>
+                    <p>
+                        One month ago, we’ve published a list of 10 SQL Articles Everyone Must Read. A list of articles that we believe would add exceptional value to our readers on the jOOQ blog. The jOOQ blog is a blog focusing on both Java and SQL, so it is only natural that today, one month later, we’re publishing an equally exciting list of 10 Java articles everyone must read.
+
+                        Note that by “must read”, we may not specifically mean the particular linked article only, but also other works from the same authors, who have been regular bloggers over the past years and never failed to produce new interesting content!
+
+                        Here goes…
+                        1. Brian Goetz: “Stewardship: the Sobering Parts”
+
+                        The first blog post is actually not a blog post but a recording of a very interesting talk by Brian Goetz on Oracle’s stewardship of Java. On the jOOQ blog, we’ve been slightly critical about 1-2 features of the Java language in the past, e.g. when comparing it to Scala, or Ceylon.
+
+                        Brian makes good points about why it would not be a good idea for Java to become just as “modern” as quickly as other languages. A must-watch for every Java developer (around 1h)
+                        2. Aleksey Shipilёv: The Black Magic of (Java) Method Dispatch
+
+                        In recent years, the JVM has seen quite a few improvements, including invokedynamic that arrived in Java 7 as a prerequisite for Java 8 lambdas, as well as a great tool for other, more dynamic languages built on top of the JVM, such as Nashorn.
+
+                        invokedynamic is only a small, “high level” puzzle piece in the advanced trickery performed by the JVM. What really happens under the hood when you call methods? How are they resolved, optimised by the JIT? Aleksey’s article sub-title reveals what the article is really about:
+
+                        “Everything you wanted to know about Black Deviously Surreptitious Magic in low-level performance engineering”
+
+                        Definitely not a simple read, but a great post to learn about the power of the JVM.
+
+                        Read Aleksey’s “The Black Magic of (Java) Method Dispatch“
+                        3. Oliver White: Java Tools and Technologies Landscape for 2014
+
+                        We’re already in 2015, but this report by Oliver White (at the time head of ZeroTurnaround’s RebelLabs) had been exceptionally well executed and touches pretty much everything related to the Java ecosystem.
+
+                        Read Oliver’s “Java Tools and Technologies Landscape for 2014“
+                        4. Peter Lawrey: Java Lambdas and Low Latency
+
+                        When Aleksey has introduced us to some performance semantics in the JVM, Peter takes this one step further, talking about low latency in Java 8. We could have picked many other useful little blog posts from Peter’s blog, which is all about low-latency, high performance computing on the JVM, sometimes even doing advanced off-heap trickery.
+
+                        Read Peter’s “Java Lambdas and Low Latency“
+                        5. Nicolai Parlog: Everything You Need To Know About Default Methods
+
+                        Nicolai is a newcomer in the Java blogosphere, and a very promising one, too. His well-researched articles go in-depth about some interesting facts related to Java 8, digging out old e-mails from the expert group’s mailing list, explaining the decisions they made to conclude with what we call Java 8 today.
+
+                        Read Nicolai’s “Everything You Need To Know About Default Methods“
+                        6. Lukas Eder: 10 Things You Didn’t Know About Java
+
+                        This list wouldn’t be complete without listing another list that we wrote ourselves on the jOOQ blog. Java is an old beast with 20 years of history this year in 2015. This old beast has a lot of secrets and caveats that many people have forgotten or never thought about. We’ve uncovered them for you:
+
+                        Read Lukas’s “10 Things You Didn’t Know About Java“
+                        7. Edwin Dalorzo: Why There Is Interface Pollution in Java 8
+
+                        Edwin has been responding to our own blog posts a couple of times in the past with very well researched and thoroughly thought through articles, in particular about Java 8 related features, e.g. comparing Java 8 Streams with LINQ (something that we’ve done ourselves, as well).
+
+                        This particular article explains why there are so many different and differently named functional interfaces in Java 8.
+
+                        Read Edwin’s “Why There Is Interface Pollution in Java 8“
+                        8. Vlad Mihalcea: How Does PESSIMISTIC_FORCE_INCREMENT Lock Mode Work
+
+                        When Java talks to databases, many people default to using Hibernate for convenience (see also 3. Oliver White: Java Tools and Technologies Landscape for 2014). Hibernate’s main vision, however, is not to add convenience – you can get that in many other ways as well. Hibernate’s main vision is to provide powerful means of navigating and persisting an object graph representation of your RDBMS’s data model, including various ways of locking.
+
+                        Vlad is an extremely proficient Hibernate user, who has a whole blog series on how Hibernate works going. We’ve picked a recent, well-researched article about locking, but we strongly suggest you read the other articles as well:
+
+                        Read Vlad’s “How Does PESSIMISTIC_FORCE_INCREMENT Lock Mode Work“
+                        9. Petri Kainulainen: Writing Clean Tests
+
+                        This isn’t a purely Java-related blog post, although it is written from the perspective of a Java developer. Modern development involves testing – automatic testing – and lots of it. Petri has written an interesting blog series about writing clean tests in Java – you shouldn’t miss his articles!
+
+                        Read Petri’s “Writing Clean Tests“
+                        10. Eugen Paraschiv: Java 8 Resources Collection
+
+                        If you don’t already have at least 9 open tabs with interesting stuff to read after this list, get ready for a browser tab explosion! Eugen Paraschiv who maintains baeldung.com has been collecting all sorts of very interesting resources related to Java 8 in a single link collection. You should definitely bookmark this collection and check back frequently for interesting changes:
+
+                        Read Eugen’s “Java 8 Resources Collection“
+                    </p>
+                    <small class="author">John Doe
+                    </small>
+                    <footer>
+                        <div class="pull-right">
+                            <a class="btn btn-default btn-xs" href="#">
+                                Read more &raquo;
+                            </a>
+                        </div>
+                    </footer>
+                </article>
+            </div>
+            <div class="col-md-6">
+                <article>
+                    <header>
+                        <h2>
+                            10 Java Articles Everyone Must Read
+                        </h2>
+                    </header>
+                    <p>
+                        One month ago, we’ve published a list of 10 SQL Articles Everyone Must Read. A list of articles that we believe would add exceptional value to our readers on the jOOQ blog. The jOOQ blog is a blog focusing on both Java and SQL, so it is only natural that today, one month later, we’re publishing an equally exciting list of 10 Java articles everyone must read.
+
+                        Note that by “must read”, we may not specifically mean the particular linked article only, but also other works from the same authors, who have been regular bloggers over the past years and never failed to produce new interesting content!
+
+                        Here goes…
+                        1. Brian Goetz: “Stewardship: the Sobering Parts”
+
+                        The first blog post is actually not a blog post but a recording of a very interesting talk by Brian Goetz on Oracle’s stewardship of Java. On the jOOQ blog, we’ve been slightly critical about 1-2 features of the Java language in the past, e.g. when comparing it to Scala, or Ceylon.
+
+                        Brian makes good points about why it would not be a good idea for Java to become just as “modern” as quickly as other languages. A must-watch for every Java developer (around 1h)
+                        2. Aleksey Shipilёv: The Black Magic of (Java) Method Dispatch
+
+                        In recent years, the JVM has seen quite a few improvements, including invokedynamic that arrived in Java 7 as a prerequisite for Java 8 lambdas, as well as a great tool for other, more dynamic languages built on top of the JVM, such as Nashorn.
+
+                        invokedynamic is only a small, “high level” puzzle piece in the advanced trickery performed by the JVM. What really happens under the hood when you call methods? How are they resolved, optimised by the JIT? Aleksey’s article sub-title reveals what the article is really about:
+
+                        “Everything you wanted to know about Black Deviously Surreptitious Magic in low-level performance engineering”
+
+                        Definitely not a simple read, but a great post to learn about the power of the JVM.
+
+                        Read Aleksey’s “The Black Magic of (Java) Method Dispatch“
+                        3. Oliver White: Java Tools and Technologies Landscape for 2014
+
+                        We’re already in 2015, but this report by Oliver White (at the time head of ZeroTurnaround’s RebelLabs) had been exceptionally well executed and touches pretty much everything related to the Java ecosystem.
+
+                        Read Oliver’s “Java Tools and Technologies Landscape for 2014“
+                        4. Peter Lawrey: Java Lambdas and Low Latency
+
+                        When Aleksey has introduced us to some performance semantics in the JVM, Peter takes this one step further, talking about low latency in Java 8. We could have picked many other useful little blog posts from Peter’s blog, which is all about low-latency, high performance computing on the JVM, sometimes even doing advanced off-heap trickery.
+
+                        Read Peter’s “Java Lambdas and Low Latency“
+                        5. Nicolai Parlog: Everything You Need To Know About Default Methods
+
+                        Nicolai is a newcomer in the Java blogosphere, and a very promising one, too. His well-researched articles go in-depth about some interesting facts related to Java 8, digging out old e-mails from the expert group’s mailing list, explaining the decisions they made to conclude with what we call Java 8 today.
+
+                        Read Nicolai’s “Everything You Need To Know About Default Methods“
+                        6. Lukas Eder: 10 Things You Didn’t Know About Java
+
+                        This list wouldn’t be complete without listing another list that we wrote ourselves on the jOOQ blog. Java is an old beast with 20 years of history this year in 2015. This old beast has a lot of secrets and caveats that many people have forgotten or never thought about. We’ve uncovered them for you:
+
+                        Read Lukas’s “10 Things You Didn’t Know About Java“
+                        7. Edwin Dalorzo: Why There Is Interface Pollution in Java 8
+
+                        Edwin has been responding to our own blog posts a couple of times in the past with very well researched and thoroughly thought through articles, in particular about Java 8 related features, e.g. comparing Java 8 Streams with LINQ (something that we’ve done ourselves, as well).
+
+                        This particular article explains why there are so many different and differently named functional interfaces in Java 8.
+
+                        Read Edwin’s “Why There Is Interface Pollution in Java 8“
+                        8. Vlad Mihalcea: How Does PESSIMISTIC_FORCE_INCREMENT Lock Mode Work
+
+                        When Java talks to databases, many people default to using Hibernate for convenience (see also 3. Oliver White: Java Tools and Technologies Landscape for 2014). Hibernate’s main vision, however, is not to add convenience – you can get that in many other ways as well. Hibernate’s main vision is to provide powerful means of navigating and persisting an object graph representation of your RDBMS’s data model, including various ways of locking.
+
+                        Vlad is an extremely proficient Hibernate user, who has a whole blog series on how Hibernate works going. We’ve picked a recent, well-researched article about locking, but we strongly suggest you read the other articles as well:
+
+                        Read Vlad’s “How Does PESSIMISTIC_FORCE_INCREMENT Lock Mode Work“
+                        9. Petri Kainulainen: Writing Clean Tests
+
+                        This isn’t a purely Java-related blog post, although it is written from the perspective of a Java developer. Modern development involves testing – automatic testing – and lots of it. Petri has written an interesting blog series about writing clean tests in Java – you shouldn’t miss his articles!
+
+                        Read Petri’s “Writing Clean Tests“
+                        10. Eugen Paraschiv: Java 8 Resources Collection
+
+                        If you don’t already have at least 9 open tabs with interesting stuff to read after this list, get ready for a browser tab explosion! Eugen Paraschiv who maintains baeldung.com has been collecting all sorts of very interesting resources related to Java 8 in a single link collection. You should definitely bookmark this collection and check back frequently for interesting changes:
+
+                        Read Eugen’s “Java 8 Resources Collection“
+                    </p>
+                    <small class="author">John Doe
+                    </small>
+                    <footer>
+                        <div class="pull-right">
+                            <a class="btn btn-default btn-xs" href="viewpost.html">
+                                Read more &raquo;
+                            </a>
+                        </div>
+                    </footer>
+                </article>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="container modal-footer">
+        <p>
+            &copy; 2016 - Software University Foundation
+        </p>
+    </div>
+</footer>
+</body>
+</html>
